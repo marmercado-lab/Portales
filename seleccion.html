@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Selecciona tus portales</title>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/seleccion.css">
+</head>
+
+<body>
+
+    <main class="pantalla-seleccion">
+
+        <!-- Barra superior con las selecciones -->
+        <div class="barra-seleccion">
+
+            <span class="titulo-barra">
+                selección:
+            </span>
+
+            <div
+                id="listaSeleccionados"
+                class="lista-seleccionados"
+            >
+                <span class="seleccion-vacia">
+                    0 / 3
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- Lugar donde aparecerán los 55 portales -->
+        <section
+            id="espacioPortales"
+            class="espacio-portales"
+            aria-label="Portales disponibles"
+        >
+        </section>
+
+
+        <!-- Texto central que cambiará según la selección -->
+        <p
+            id="mensajeSeleccion"
+            class="mensaje-seleccion"
+        >
+            elige 3 portales por los que quieras ver a través!
+        </p>
+
+
+        <!-- Botón para ir al resultado -->
+        <button
+            id="botonContinuar"
+            class="boton-continuar"
+            type="button"
+            disabled
+        >
+            continuar
+        </button>
+
+    </main>
+
+
+    <!-- Primero se cargan los datos y luego el funcionamiento -->
+    <script src="js/datos-portales.js"></script>
+    <script src="js/seleccion.js"></script>
+    
+
+</body>
+
+</html>

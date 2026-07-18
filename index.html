@@ -3,26 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Portales</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/inicio.css">
 </head>
 
 <body>
 
-    <main>
+    <main class="pantalla-inicio">
 
-        <h1>Portales</h1>
+        <section class="contenido-inicio">
 
-        <p>¿Cómo te llamas?</p>
+            <h1 class="titulo-inicio">
+                Portales
+            </h1>
 
-        <input type="text" id="nombre">
+            <p class="pregunta-inicio">
+                ¿Cómo te llamas?
+            </p>
 
-        <button>Entrar</button>
+            <form
+                id="formularioNombre"
+                class="formulario-inicio"
+            >
+
+                <input
+                    type="text"
+                    id="nombre"
+                    class="input-nombre"
+                    autocomplete="off"
+                >
+
+                <button
+                    type="submit"
+                    class="boton-entrar"
+                >
+                    Entrar
+                </button>
+
+            </form>
+
+            <p
+                id="mensajeError"
+                class="mensaje-error"
+            ></p>
+
+        </section>
 
     </main>
 
-    <script src="script.js"></script>
+    <script src="js/inicio.js"></script>
 
 </body>
 
